@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1495736853 source:d:\1\n\avr\codeblocks\patterns\lexi\main.cpp
+	<tchar.h>
+	<windows.h>
+	<MainWindow.h>
+	<iostream>
+
+1494607414 source:d:\1\n\avr\codeblocks\patterns\lexi\src\point.cpp
+	"Point.h"
+
+1494607585 d:\1\n\avr\codeblocks\patterns\lexi\include\point.h
+
+1494607556 source:d:\1\n\avr\codeblocks\patterns\lexi\src\rect.cpp
+	"Rect.h"
+
+1494607556 d:\1\n\avr\codeblocks\patterns\lexi\include\rect.h
+
+1495647420 source:d:\1\n\avr\codeblocks\patterns\lexi\src\window.cpp
+	"Window.h"
+	<iostream>
+	<windows.h>
+
+1495564218 d:\1\n\avr\codeblocks\patterns\lexi\include\window.h
+	<windows.h>
+
+1494864762 source:d:\1\n\avr\codeblocks\patterns\lexi\src\character.cpp
+	"Character.h"
+
+1494864774 d:\1\n\avr\codeblocks\patterns\lexi\include\character.h
+	<Glyph.h>
+
+1495737944 d:\1\n\avr\codeblocks\patterns\lexi\include\glyph.h
+	<Point.h>
+	<Rect.h>
+	<MainWindow.h>
+
+1495738001 source:d:\1\n\avr\codeblocks\patterns\lexi\src\glyph.cpp
+	<iostream>
+	<Glyph.h>
+
+1495737986 source:d:\1\n\avr\codeblocks\patterns\lexi\src\compositeglyph.cpp
+	<iostream>
+	<algorithm>
+	<vector>
+	"CompositeGlyph.h"
+
+1495737986 d:\1\n\avr\codeblocks\patterns\lexi\include\compositeglyph.h
+	<vector>
+	<Glyph.h>
+
+1495737751 source:d:\1\n\avr\codeblocks\patterns\lexi\src\charglyph.cpp
+	"CharGlyph.h"
+	<iostream>
+
+1495737731 d:\1\n\avr\codeblocks\patterns\lexi\include\charglyph.h
+	<Glyph.h>
+
+1495737962 d:\1\n\avr\codeblocks\patterns\lexi\include\mainwindow.h
+	<BaseWindow.h>
+
+1495736985 d:\1\n\avr\codeblocks\patterns\lexi\include\basewindow.h
+	<windows.h>
+
+1495733306 source:d:\1\n\avr\codeblocks\patterns\lexi\src\basewindow.cpp
+	"BaseWindow.h"
+
+1495738123 source:d:\1\n\avr\codeblocks\patterns\lexi\src\mainwindow.cpp
+	"MainWindow.h"
+	<CharGlyph.h>
+	<string>
+
+1495734033 source:d:\1\n\avr\codeblocks\patterns\lexi\src\basewindow.tpp
+	"BaseWindow.h"
+
