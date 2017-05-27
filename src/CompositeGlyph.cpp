@@ -21,12 +21,22 @@ void CompositeGlyph::Draw(MainWindow * w)
     }
 }
 
-void CompositeGlyph::Bounds(Rect &)
+void CompositeGlyph::Bounds(Rect & r)
 {
-//    for(auto c : children) {
-//        c->Bounds();
-//    }
-    std::cerr << "CompositeGlyph::Bounds" << '\n';
+    Glyph * firstChild = Child(0);
+    firstChild->Bounds(r); //x, y от первого дочернего элемента
+
+    int w = 0, h = 0;
+    Rect cR;
+    for(auto c : children) {
+        c->Bounds(cR);
+        w += cR.width; //суммарная ширина дочерних элементов
+        if(cR.height > h) {
+            h = cR.height; //максимальная высота
+        }
+    }
+    r.width = w;
+    r.height = h;
 }
 
 bool CompositeGlyph::Intersects(const Point & p)
@@ -55,7 +65,7 @@ void CompositeGlyph::Remove(Glyph * g)
         children.erase(it);
     }
     else {
-        std::cerr << "CompositeGlyph::Remove()" << '\n';
+        std::cerr << "CompositeGlyph::Remove() - glyph is not child of this CompositeGlyph" << '\n';
     }
 }
 

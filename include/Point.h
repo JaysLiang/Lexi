@@ -2,12 +2,10 @@
 #define POINT_H
 
 
-class Point
+struct Point
 {
-    public:
-        Point();
-    protected:
-    private:
+    int x;
+    int y;
 };
 
 #endif // POINT_H

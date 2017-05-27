@@ -1,7 +1,7 @@
 #include "CharGlyph.h"
 #include <iostream>
 
-CharGlyph::CharGlyph(char _ch) : ch(_ch), x(0), y(0)
+CharGlyph::CharGlyph(char _ch, int _w, int _h, int _x, int _y) : ch(_ch), width(_w), height(_h), x(_x), y(_y)
 {
     //ctor
 }
@@ -16,13 +16,17 @@ void CharGlyph::Draw(MainWindow *w)
     w->DrawChar(ch, x, y);
 }
 
-void CharGlyph::Bounds(Rect & /*r*/)
+void CharGlyph::Bounds(Rect & r)
 {
-    std::cerr << "!!!!Not implemented CharGlyph::Bounds" << '\n';
+    r.x = x;
+    r.y = y;
+    r.width = width;
+    r.height = height;
 }
 
-bool CharGlyph::Intersects(const Point & /*p*/)
+bool CharGlyph::Intersects(const Point & p)
 {
-    std::cerr << "!!!!Not implemented CharGlyph::Intersects" << '\n';
-    return false;
+    bool intersectsX = (x <= p.x) && (p.x <= (x + width - 1));
+    bool intersectsY = (y <= p.y) && (p.y <= (y + height - 1));
+    return intersectsX && intersectsY;
 }

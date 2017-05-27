@@ -7,6 +7,7 @@ template <class DERIVED_TYPE>
 class BaseWindow
 {
 public:
+
     static LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
     {
         DERIVED_TYPE *pThis = NULL;
@@ -33,22 +34,19 @@ public:
         }
     }
 
-    BaseWindow() : m_hwnd(NULL) { }
-    virtual ~BaseWindow() { }
-
     BOOL Create(
         LPCSTR lpWindowName,
         DWORD dwStyle,
         DWORD dwExStyle = 0,
-        int x = CW_USEDEFAULT,
-        int y = CW_USEDEFAULT,
-        int nWidth = CW_USEDEFAULT,
-        int nHeight = CW_USEDEFAULT,
+        int x = 1920/2 - 400/2/*CW_USEDEFAULT*/,
+        int y = 1080/2 - 400/2/*CW_USEDEFAULT*/,
+        int nWidth = 400/*CW_USEDEFAULT*/,
+        int nHeight = 400/*CW_USEDEFAULT*/,
         HWND hWndParent = 0,
         HMENU hMenu = 0
         )
     {
-        WNDCLASS wc = {0};
+        WNDCLASS wc = {0, 0, 0, 0, 0, 0, 0, 0, 0, 0};
 
         wc.lpfnWndProc   = DERIVED_TYPE::WindowProc;
         wc.hInstance     = GetModuleHandle(NULL);
@@ -68,8 +66,11 @@ public:
 
 protected:
 
+    BaseWindow() : m_hwnd(NULL) { }
+    virtual ~BaseWindow() { }
+
     virtual LPCSTR  ClassName() const = 0;
-    virtual LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam) = 0;
+    virtual LRESULT HandleMessage(UINT &, WPARAM &, LPARAM &) = 0;
 
     HWND m_hwnd;
 };

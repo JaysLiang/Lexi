@@ -9,15 +9,6 @@
 #include <MainWindow.h>
 #include <iostream>
 
-//-------TEST-------
-//#include <Glyph.h>
-//#include <CompositeGlyph.h>
-//#include <CharGlyph.h>
-//#include <iostream>
-//void test();
-//-------TEST-------
-
-
 
 /*  Declare Windows procedure  */
 //LRESULT CALLBACK WindowProcedure (HWND, UINT, WPARAM, LPARAM);
@@ -73,13 +64,6 @@ int WINAPI WinMain (HINSTANCE /*hThisInstance*/,
 //
 //    /* Make the window visible on the screen */
 //    ShowWindow (hwnd, nCmdShow);
-
-
-
-
-//-------TEST-------
-//test(hwnd);
-//-------TEST-------
 
     MainWindow win;
 
@@ -149,21 +133,4 @@ int WINAPI WinMain (HINSTANCE /*hThisInstance*/,
 //    }
 //
 //    return 0;
-//}
-
-//void test()
-//{
-//    Glyph * g1 = new Glyph();
-//    Glyph * g2 = new Glyph();
-//    Glyph * g3 = new Glyph();
-//    CompositeGlyph * row1 = new CompositeGlyph();
-//    row1->Insert(g1, 0);
-//    row1->Insert(g2, 1);
-//    CompositeGlyph * row2 = new CompositeGlyph();
-//    row2->Insert(g3, 0);
-//    CompositeGlyph * page = new CompositeGlyph();
-//    page->Insert(row1, 0);
-//    page->Insert(row2, 1);
-//    page->Remove(row1);
-//    MessageBox(0, "text", "title", MB_OK);
 //}

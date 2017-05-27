@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1495736853 source:d:\1\n\avr\codeblocks\patterns\lexi\main.cpp
+1495824007 source:d:\1\n\avr\codeblocks\patterns\lexi\main.cpp
 	<tchar.h>
 	<windows.h>
 	<MainWindow.h>
@@ -8,12 +8,12 @@
 1494607414 source:d:\1\n\avr\codeblocks\patterns\lexi\src\point.cpp
 	"Point.h"
 
-1494607585 d:\1\n\avr\codeblocks\patterns\lexi\include\point.h
+1495872450 d:\1\n\avr\codeblocks\patterns\lexi\include\point.h
 
 1494607556 source:d:\1\n\avr\codeblocks\patterns\lexi\src\rect.cpp
 	"Rect.h"
 
-1494607556 d:\1\n\avr\codeblocks\patterns\lexi\include\rect.h
+1495817197 d:\1\n\avr\codeblocks\patterns\lexi\include\rect.h
 
 1495647420 source:d:\1\n\avr\codeblocks\patterns\lexi\src\window.cpp
 	"Window.h"
@@ -29,46 +29,58 @@
 1494864774 d:\1\n\avr\codeblocks\patterns\lexi\include\character.h
 	<Glyph.h>
 
-1495737944 d:\1\n\avr\codeblocks\patterns\lexi\include\glyph.h
+1495821799 d:\1\n\avr\codeblocks\patterns\lexi\include\glyph.h
 	<Point.h>
 	<Rect.h>
 	<MainWindow.h>
 
-1495738001 source:d:\1\n\avr\codeblocks\patterns\lexi\src\glyph.cpp
+1495822367 source:d:\1\n\avr\codeblocks\patterns\lexi\src\glyph.cpp
 	<iostream>
 	<Glyph.h>
 
-1495737986 source:d:\1\n\avr\codeblocks\patterns\lexi\src\compositeglyph.cpp
+1495873143 source:d:\1\n\avr\codeblocks\patterns\lexi\src\compositeglyph.cpp
 	<iostream>
 	<algorithm>
 	<vector>
 	"CompositeGlyph.h"
 
-1495737986 d:\1\n\avr\codeblocks\patterns\lexi\include\compositeglyph.h
+1495822367 d:\1\n\avr\codeblocks\patterns\lexi\include\compositeglyph.h
 	<vector>
 	<Glyph.h>
 
-1495737751 source:d:\1\n\avr\codeblocks\patterns\lexi\src\charglyph.cpp
+1495873256 source:d:\1\n\avr\codeblocks\patterns\lexi\src\charglyph.cpp
 	"CharGlyph.h"
 	<iostream>
 
-1495737731 d:\1\n\avr\codeblocks\patterns\lexi\include\charglyph.h
+1495822367 d:\1\n\avr\codeblocks\patterns\lexi\include\charglyph.h
 	<Glyph.h>
 
-1495737962 d:\1\n\avr\codeblocks\patterns\lexi\include\mainwindow.h
+1495822388 d:\1\n\avr\codeblocks\patterns\lexi\include\mainwindow.h
 	<BaseWindow.h>
+	<tuple>
 
-1495736985 d:\1\n\avr\codeblocks\patterns\lexi\include\basewindow.h
+1495822301 d:\1\n\avr\codeblocks\patterns\lexi\include\basewindow.h
 	<windows.h>
 
 1495733306 source:d:\1\n\avr\codeblocks\patterns\lexi\src\basewindow.cpp
 	"BaseWindow.h"
 
-1495738123 source:d:\1\n\avr\codeblocks\patterns\lexi\src\mainwindow.cpp
+1495873283 source:d:\1\n\avr\codeblocks\patterns\lexi\src\mainwindow.cpp
 	"MainWindow.h"
-	<CharGlyph.h>
 	<string>
+	<sstream>
+	<DocumentCreator.h>
 
 1495734033 source:d:\1\n\avr\codeblocks\patterns\lexi\src\basewindow.tpp
 	"BaseWindow.h"
+
+1495824945 source:d:\1\n\avr\codeblocks\patterns\lexi\src\documentcreator.cpp
+	"DocumentCreator.h"
+	<tuple>
+	<CompositeGlyph.h>
+	<CharGlyph.h>
+
+1495822619 d:\1\n\avr\codeblocks\patterns\lexi\include\documentcreator.h
+	<Glyph.h>
+	<MainWindow.h>
 

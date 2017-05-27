@@ -5,6 +5,7 @@
 #include <Rect.h>
 #include <MainWindow.h>
 
+
 class Glyph
 {
     public:

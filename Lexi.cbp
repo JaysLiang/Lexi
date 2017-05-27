@@ -60,20 +60,18 @@
 		</Linker>
 		<Unit filename="include/BaseWindow.h" />
 		<Unit filename="include/CharGlyph.h" />
-		<Unit filename="include/Character.h" />
 		<Unit filename="include/CompositeGlyph.h" />
+		<Unit filename="include/DocumentCreator.h" />
 		<Unit filename="include/Glyph.h" />
 		<Unit filename="include/MainWindow.h" />
 		<Unit filename="include/Point.h" />
 		<Unit filename="include/Rect.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/CharGlyph.cpp" />
-		<Unit filename="src/Character.cpp" />
 		<Unit filename="src/CompositeGlyph.cpp" />
+		<Unit filename="src/DocumentCreator.cpp" />
 		<Unit filename="src/Glyph.cpp" />
 		<Unit filename="src/MainWindow.cpp" />
-		<Unit filename="src/Point.cpp" />
-		<Unit filename="src/Rect.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

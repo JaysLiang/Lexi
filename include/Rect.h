@@ -2,12 +2,12 @@
 #define RECT_H
 
 
-class Rect
+struct Rect
 {
-    public:
-        Rect();
-    protected:
-    private:
+    int x;
+    int y;
+    int width;
+    int height;
 };
 
 #endif // RECT_H
